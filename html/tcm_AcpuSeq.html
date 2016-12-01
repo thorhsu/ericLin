@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Canada Tzuchi Chinese Medicine Case Management System</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">上醫堂經絡循行取穴查詢</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Appearance<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="file_load" id="YiJing_concept_big">易解經絡循行心要</a></li>
+                            <li><a href="#" class="file_load" id="top_concept_big">經絡循行取穴心要</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" class="file_load" id="64Hexagrams">易經64卦表</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                           經胳查找
+                           <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="file_load" id="HandTaiYing">☱ 1 手太陰肺經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="HandShaoYing">☲ 1 手少陰心經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="HandJueYing">☳ 1 手厥陰心包經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="HandTaiYang">☲ 0 手太陽小腸經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="HandShaoYang">☳ 0 手少陽三焦經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="HandYangMing">☱ 0 手陽明大腸經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootTaiYing">☶ 1 足太陰脾經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootShaoYing">☵ 1 足少陰腎經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootJueYing">☴ 1 足厥陰肝經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootTaiYang">☵ 0 足太陽膀胱經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootShaoYang">☴ 1 足少陽膽經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootYangMing">☶ 0 足陽明胃經</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">穴位查找<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="file_load" id="HandTaiYing_accu">☱ 1 手太陰肺經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="HandShaoYing_accu">☲ 1 手少陰心經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="HandJueYing_accu">☳ 1 手厥陰心包經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="HandTaiYang_accu">☲ 0 手太陽小腸經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="HandShaoYang_accu">☳ 0 手少陽三焦經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="HandYangMing_accu">☱ 0 手陽明大腸經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootTaiYing_accu">☶ 1 足太陰脾經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootShaoYing_accu">☵ 1 足少陰腎經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootJueYing_accu">☴ 1 足厥陰肝經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootTaiYang_accu">☵ 0 足太陽膀胱經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootShaoYang_accu">☴ 1 足少陽膽經</a>
+                            </li>
+                            <li>
+                                <a href="#" class="file_load" id="FootYangMing_accu">☶ 0 足陽明胃經</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">五門十變</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">林大棟&nbsp;中醫師<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Personal Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div id="wrapper" class="container-fluid" style="margin-top: 50px;">
+        <!-- Left Sidebar -->
+        <div id="left-sidebar-wrapper">
+
+            <h4><b></b></h4>
+            <div id="placeholder">
+            </div>
+        </div>
+
+        <!-- /#left-sidebar-wrapper -->
+        <!-- Right Sidebar -->
+        <div id="right-sidebar-wrapper">
+
+            <h4><b></b></h4>
+            <div id="placeholder">
+
+            </div>
+        </div>
+        <!-- /#right-sidebar-wrapper -->
+
+        <!-- Toggle Buttons -->
+        <a href="#left-menu-toggle" class="btn btn-link btn-md" id="left-menu-toggle"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a href="#right-menu-toggle" class="btn btn-link btn-md" id="right-menu-toggle"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 main text-center" id="main-content">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../js/jquery.js"><\/script>')
+    </script>
+    <script src="../js/bootstrap.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../js/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <link rel="stylesheet" href="../jqueryUI/jquery-ui.css">
+    <script src="../jqueryUI/jquery-ui.js"></script>
+    <script>
+        $(".file_load").click(function () {
+            var load_file = $(this).prop("id") + ".html";
+            $.get("./" + load_file, function (data) {
+                $("#main-content").html(data);
+            });
+        });
+    </script>
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#left-menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("left-toggled");
+        });
+
+        $("#right-menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("right-toggled");
+        });
+    </script>
+
+</body>
+
+</html>
