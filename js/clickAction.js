@@ -12,7 +12,7 @@ $(function () {
                     buttons: [{
                        label: '開啟圖片',
                        // no title as it is optional
-                       cssClass: 'btn-info',
+                       cssClass: 'btn-primary',
                        action: function(){
                           BootstrapDialog.show({
                              title: title + "圖片詳解",
@@ -22,5 +22,9 @@ $(function () {
                        }
                     }]
         });
+    });
+    
+    $(".balance").click(function () {
+        var buttonId = $(this).prop("id");            
     });
 });

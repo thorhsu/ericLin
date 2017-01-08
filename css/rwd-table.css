@@ -30,6 +30,11 @@
 .rwd-table th,.rwd-table td:before{
 	color:#D20B2A;font-weight:bold;
 }
+.rwd-btn{
+    white-space: normal;
+    width: 100px;
+    font-size: 9px;
+}
 @media (min-width: 480px) {
    .rwd-table td:before{
    	   display:none;
